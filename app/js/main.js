@@ -28,4 +28,36 @@ $(function(){
     nextArrow: '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/icons/arrow-black-right.svg" alt=""></button>',
   });
 
+  $('.filter-style').styler();
+
+  $('.filter__item-drop, .filter-extra').on('click', function(){
+    $(this).toggleClass('filter__item-drop--active');
+    $(this).next().slideToggle('200');
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    // type="double",
+    min: 100000,
+    max: 500000,
+  });
+  $('.catalog__filter-btngrid').on('click', function(){
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').removeClass('product-item__wrapper--list')
+  });
+
+  $('.catalog__filter-btnline').on('click', function(){
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+    $('.product-item__wrapper').addClass('product-item__wrapper--list')
+  });
+
+  $(".rate-yo").rateYo({
+    rating: 3.6,
+    readOnly: true,
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    normalFill: "#C4C4C4"
+  });
+
 });
