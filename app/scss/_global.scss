@@ -29,6 +29,8 @@ body{
   font-size: 20px;
   line-height: 24px;
   @include f400;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 .container{
   max-width: 1200px;
