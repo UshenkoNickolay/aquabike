@@ -1,0 +1,21 @@
+$text: #2F3035;
+$blue: #1C62CD;
+$bg: #F0F0F4;
+$border: #CDCDCD;
+
+@mixin f400 {
+  font-family: SF Pro Display;
+  font-weight: 400;
+}
+@mixin f500 {
+  font-family: SF Pro Display;
+  font-weight: 500;
+}
+@mixin f600 {
+  font-family: SF Pro Display;
+  font-weight: 600;
+}
+@mixin f700 {
+  font-family: SF Pro Display;
+  font-weight: 700;
+}
